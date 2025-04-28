@@ -9,12 +9,19 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 
 ## Algorithm
 1.Import essential libraries like pandas, numpy, and sklearn. Load the dataset containing employee features (e.g., experience, education) and the target (salary).
+
 2.Handle missing values, encode categorical features (e.g., department) using OneHotEncoder or LabelEncoder. Normalize or scale numerical features if necessary to ensure consistent data for the model.
+
 3.Use train_test_split() from sklearn.model_selection to divide the data into training and testing sets. Typically, you split the data into 80% for training and 20% for testing.
+
 4.Use DecisionTreeRegressor from sklearn.tree and fit the model on the training data. You can specify parameters such as max_depth or min_samples_split to control the complexity of the tree.
+
 5.Use the trained model to predict the salary for the employees in the test dataset. Store these predictions and compare them with the actual salaries for evaluation.
+
 6.Use regression evaluation metrics like mean_squared_error, r2_score, or mean_absolute_error from sklearn.metrics. These metrics will help assess how well the model predicts employee salaries.
+
 7.Use plot_tree() from sklearn.tree to visualize the structure of the decision tree. This will give insights into the most important features influencing salary predictions and how the tree splits.
+
 ## Program:
 ```
 /*
